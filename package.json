@@ -1,24 +1,28 @@
 {
-    "name": "connect-testab",
-    "version": "0.0.1",
-    "description": "Just a simple A/B test middleware",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/revington/connect-testab"
-    },
-    "keywords": ["test A/B", "test AB", "AB testing"],
-    "author": "Pedro Narciso García Revington",
-    "license": "MIT",
-    "dependencies": {
-        "cookie": "~0.1.0"
-    },
-    "devDependencies": {
-        "supertest": "~0.6.0",
-	"mocha": "*",
-        "connect": "2.7.10"
-    },
-    "scripts":{
-	    "test": "./node_modules/mocha/bin/mocha"
-    }
+  "name": "connect-testab",
+  "version": "0.0.1",
+  "description": "Just a simple A/B test middleware",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/revington/connect-testab"
+  },
+  "keywords": [
+    "test A/B",
+    "test AB",
+    "AB testing"
+  ],
+  "author": "Pedro Narciso García Revington",
+  "license": "MIT",
+  "dependencies": {
+    "cookie": "~0.1.0"
+  },
+  "devDependencies": {
+    "supertest": "~0.6.0",
+    "mocha": "*",
+    "connect": "~2.7.10"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  }
 }
