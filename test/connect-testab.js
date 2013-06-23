@@ -22,6 +22,19 @@ describe('connect-testab', function () {
     app.use(function (req, res) {
         res.end(req.testAB);
     });
+    describe('Alternate between "A" and "B"', function () {
+        var expected = ['A', 'B', 'A', 'B', 'A', 'B', 'A', 'B', 'A', 'B'],
+            actual = [];
+        before(function () {
+            var len = 10, alternate = testAB.alternate();
+            while (len--) {
+                actual.push(alternate());
+            }
+        });
+        it('should alternate between "A" and "B"', function () {
+            assert.deepEqual(actual, expected);
+        });
+    });
     describe('Default behavior', function () {
         describe('An A/B test', function () {
             it('should be stored on req.testAB', function (done) {
