@@ -1,27 +1,33 @@
 {
-    "name": "connect-testab",
-    "version": "0.0.1",
-    "description": "Just a simple A/B test middleware",
-    "main": "./index",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/revington/connect-testab"
-    },
-    "keywords": ["test A/B", "test AB", "AB testing"],
-    "author": "Pedro Narciso García Revington",
-    "license": "MIT",
-    "dependencies": {
-        "cookie": "~0.1.0"
-    },
-    "devDependencies": {
-        "supertest": "~0.6.0",
-        "mocha": "*",
-        "connect": "~2.7.10",
-        "express": "~3.2.6",
-        "jade": "~0.31.2"
-    },
-    "scripts": {
-        "test": "make test",
-        "coverage": "make test-cov --no-print-directory"
-    }
+  "name": "connect-testab",
+  "version": "0.0.1",
+  "description": "Just a simple A/B test middleware",
+  "main": "./index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/revington/connect-testab"
+  },
+  "keywords": [
+    "test A/B",
+    "test AB",
+    "AB testing"
+  ],
+  "author": "Pedro Narciso García Revington",
+  "license": "MIT",
+  "dependencies": {
+    "cookie": "~0.1.0"
+  },
+  "devDependencies": {
+    "supertest": "~0.6.0",
+    "mocha": "*",
+    "connect": "~2.7.10",
+    "express": "~3.2.6",
+    "jade": "~0.31.2",
+    "mocha-istanbul": "~0.2.0",
+    "istanbul": "~0.1.43"
+  },
+  "scripts": {
+    "test": "make test",
+    "coverage": "make test-cov --no-print-directory"
+  }
 }
