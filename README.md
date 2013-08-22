@@ -3,6 +3,10 @@ connect-testab
 
 Just a simple A/B testing middleware for connect.
 
+Install
+-------
+`$ npm install connect-testab`
+
 Usage
 -----
 
