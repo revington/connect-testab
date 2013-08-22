@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/revington/connect-testab.png)](https://travis-ci.org/revington/connect-testab)
 connect-testab
 ==============
 
