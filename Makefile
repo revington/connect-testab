@@ -2,7 +2,7 @@ REPORTER = spec
 COVERAGE_OPTS = --lines 90 --statements 90 --branches 80 --functions 90
 BIN= ./node_modules/.bin
 
-test: test-unit check-coverage test-acceptance
+test: test-unit test-acceptance
 test-unit:
 	@NODE_ENV=test $(BIN)/mocha \
 		--reporter $(REPORTER) 
